@@ -4,22 +4,24 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>MyWeather</title>
+  <link rel="icon" href="/src/sun.png">
+  <script src="main.js" defer></script>
 </head>
 <body>
 <div class="boxContainer">
   <div class="weatherBox">
-    <div class="title">WeatherApp</div>
+    <div class="title">MyWeather</div>
     <form class="searchCity">
-      <input type="search" name="search" placeholder="Type city here..." class="search">
-      <button type="submit" class="findWeather">Submit </button>
+      <input type="search" name="search" placeholder="Type city here..." class="search" id="search">
+      </input>
+      <button type="button" class="findWeather" id="findWeather">
+        Submit 
+      </button>
     </form>
     <div class="contentHolder">
-      
     </div>
   </div>
 </div>  
-<script src="main.js" defer>
-</script>
 </body>
 </html>
