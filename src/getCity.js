@@ -3,6 +3,5 @@
 export default function getCity() {
   const cityHere = document.getElementById('search').value;
   const newCity = cityHere.toLowerCase();
-  console.log(newCity);
   return newCity;
 }
