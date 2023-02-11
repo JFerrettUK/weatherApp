@@ -6,13 +6,11 @@ import './style.css';
 import getCity from './getCity.js';
 import fetchWeather from './fetchWeather.js';
 
-function getWeather() {
+async function getWeather() {
   const relevantCity = getCity();
-  console.log(relevantCity);
-  const theJSON = fetchWeather(relevantCity);
-  console.log(theJSON);
-  const theData = JSON.parse(theJSON);
+  const theData = await fetchWeather(relevantCity);
   console.log(theData);
+  console.log(`${typeof theData} typeof theData`);
 }
 
 const searchButton = document.getElementById('findWeather');
