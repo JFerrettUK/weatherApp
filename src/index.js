@@ -5,15 +5,17 @@ import _ from 'lodash';
 import './style.css';
 import getCity from './getCity.js';
 import fetchWeather from './fetchWeather.js';
+import processWeather from './processWeather.js';
 
 async function getWeather() {
   const relevantCity = getCity();
   const theData = await fetchWeather(relevantCity);
-  console.log(theData);
-  console.log(`${typeof theData} typeof theData`);
+  processWeather(theData);
 }
 
 const searchButton = document.getElementById('findWeather');
 searchButton.addEventListener('click', () => {
-  getWeather();
+  const weatherData = getWeather();
+  console.log(weatherData);
+  // processWeather(weatherData);
 });

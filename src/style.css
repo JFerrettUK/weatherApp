@@ -74,6 +74,29 @@ html {
 }
 
 .contentHolder {
-    height: 67%;
     display: grid;
+    justify-content: center;
+}
+
+.iconHolder {
+    display: grid;
+    width: 300px;
+    height: 100px;
+    justify-content: center;
+}
+
+.imageCont {
+    height: 100px;
+    width: 100px
+}
+
+.descripCont, .nameCont, .tempCont {
+    display: grid;
+    width: 300px;
+    justify-content: center;
+}
+
+.nameCont {
+    padding-top: 30px;
+    font-weight: 900;
 }
