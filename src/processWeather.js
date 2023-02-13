@@ -1,6 +1,8 @@
 /* eslint-disable import/extensions */
 /* eslint-disable no-console */
 import capitalizeWord from './capitalizeWord.js';
+import capitalizeWords from './capitalizeWords.js';
+
 import kelvinToC from './kelvinToC.js';
 
 export default function processWeather(theData) {
@@ -12,11 +14,10 @@ export default function processWeather(theData) {
 
   const descripText = theData.weather[0].description;
   const capDescripText = capitalizeWord(descripText);
-  console.log(capDescripText);
   const descripElement = document.getElementById('descripCont');
   descripElement.innerText = capDescripText;
 
-  const cityName = capitalizeWord(theData.name);
+  const cityName = capitalizeWords(theData.name);
   const nameElement = document.getElementById('nameCont');
   nameElement.innerText = cityName;
 
@@ -27,4 +28,9 @@ export default function processWeather(theData) {
   const finalC = `${decimal}°C`;
   tempElement.innerText = finalC;
   tempElement.style.fontWeight = 'bold';
+
+  const humidStart = 'Humidity';
+  const humidText = `: ${theData.main.humidity}%`;
+  const humidElement = document.getElementById('humidCont');
+  humidElement.innerText = humidStart + humidText;
 }

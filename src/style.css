@@ -27,7 +27,7 @@ html {
 }
 
 .weatherBox {
-    height: 400px;
+    height: 350px;
     width: 300px;
     border-radius: 16px;
     backdrop-filter: blur(20px);
@@ -90,7 +90,7 @@ html {
     width: 100px
 }
 
-.descripCont, .nameCont, .tempCont {
+.descripCont, .nameCont, .tempCont, .humidCont {
     display: grid;
     width: 300px;
     justify-content: center;
