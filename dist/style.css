@@ -1,0 +1,102 @@
+h1 {
+    color: blue;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+html { 
+    background: url('cloudBackground.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    color: rgb(72, 78, 85);
+}
+
+.boxContainer {
+    height: 100%;
+    width: 100%; 
+    display: grid;
+    justify-content: center;
+    align-items: center;    
+}
+
+.weatherBox {
+    height: 350px;
+    width: 300px;
+    border-radius: 16px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(255, 255, 255, .5);
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.title {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size:x-large;
+    margin-bottom: 8px;
+}
+
+
+.searchCity {
+    display: grid;
+    gap: 5px;
+    justify-content: center;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    border: 1px;
+}
+
+.findWeather {
+    display: flex;
+    justify-content: center;
+    width: 125px;
+    margin-left: 27px;
+    border-radius: 5px;
+    border: 1px;
+}
+
+.findWeather:hover {
+    transition: 0.2s;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.20);
+}
+
+.contentHolder {
+    display: grid;
+    justify-content: center;
+}
+
+.iconHolder {
+    display: grid;
+    width: 300px;
+    height: 100px;
+    justify-content: center;
+}
+
+.imageCont {
+    height: 100px;
+    width: 100px
+}
+
+.descripCont, .nameCont, .tempCont, .humidCont {
+    display: grid;
+    width: 300px;
+    justify-content: center;
+}
+
+.nameCont {
+    padding-top: 30px;
+    font-weight: 900;
+}
